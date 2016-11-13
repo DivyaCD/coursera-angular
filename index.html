@@ -3,9 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Hello World</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
     <h1> Hello World!Have fun programming!</h1>
-
+    <div id="test" ng-app="Myapp" ng-controller="calcCtrl">
+      <input type="text" ng-model="name" ng-keyup="displayVal()"></input>
+      {{name}}
+      {{val}}
+    </div>
   </body>
 </html>
